@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.example.armandkevin.R
 
 
@@ -21,9 +23,14 @@ class TaskListFragment : Fragment () {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val recyclerView = view.findViewById<RecyclerView>(R.id.id_de_votre_recycler_view)
-        recyclerView.layoutManager = ...
+
+        val recyclerView = view.findViewById<RecyclerView>(R.id.recyclerView)
+        recyclerView.layoutManager = LinearLayoutManager(context)
+
+        val adapter = TaskListAdapter() // ne marche pas pour l'instant
+        adapter.currentList = taskList
+
+        recyclerView.adapter = adapter
     }
-    val adapter = TaskListAdapter() // ne marche pas pour l'instant
-    adapter.currentList = taskList
+
 }
