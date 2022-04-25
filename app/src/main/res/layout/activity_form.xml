@@ -5,13 +5,13 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <TextView
+    <EditText
         android:id="@+id/task_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@android:color/holo_blue_bright" />
 
-    <TextView
+    <EditText
         android:id="@+id/task_desc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -22,6 +22,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="48dp"
-        android:src="@android:drawable/ic_menu_delete"
-        tools:ignore="SpeakableTextPresentCheck" />
+        android:src="?android:attr/textCheckMark" />
 </LinearLayout>
