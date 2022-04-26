@@ -24,4 +24,12 @@
         android:minHeight="48dp"
         android:src="@android:drawable/ic_menu_delete"
         tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/task_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="48dp"
+        android:src="@android:drawable/ic_menu_edit"
+        tools:ignore="SpeakableTextPresentCheck" />
 </LinearLayout>

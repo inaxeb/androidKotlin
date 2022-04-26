@@ -6,21 +6,26 @@
     android:orientation="vertical">
 
     <EditText
-        android:id="@+id/task_title"
+        android:id="@+id/task_edit1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/holo_blue_bright" />
+        android:background="#FF0000"
+        android:inputType="textPersonName"
+        android:text="Name" />
 
     <EditText
-        android:id="@+id/task_desc"
+        android:id="@+id/task_edit2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
         android:background="@android:color/holo_blue_bright" />
 
     <ImageButton
-        android:id="@+id/task_delete"
+        android:id="@+id/activity_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:minHeight="48dp"
         android:src="?android:attr/textCheckMark" />
+
 </LinearLayout>
